@@ -9,6 +9,8 @@ What's the probability to meet the sales target?
 Python to the rescue! With some basic Python, you can easily calculate the answer
 and you will learn to do it in this tutorial!
 
+![Simulation](https://raw.githubusercontent.com/GedRap/monte_carlo_sales_estimate/master/examples/sales_target_01.png)
+
 Well, it doesn't look promising, only ~5% :( better increase that mean!
 
 ### Who is this intended for?
@@ -130,11 +132,23 @@ Target met: 5.6%
 ### Visualization
 
 Visualization is a very powerful tool and helps to put the results in some perspective.
-For example, we can plot every simulation as a different line and visually assess them, come up with further questions.
+For example, we can plot every simulation as a different line and visually assess them, come up with further questions. Also, they look cool :)
 
 For example, does the standard deviation affect our chances of meeting the target?
 
-I added a [jupyter notebook](http://jupyter.org/) (notebook.ipynb) with examples of some visualizations.
+![Month simulation](https://raw.githubusercontent.com/GedRap/monte_carlo_sales_estimate/master/examples/sales_target_whole_month.png)
+
+![Increase SD](https://raw.githubusercontent.com/GedRap/monte_carlo_sales_estimate/master/examples/sales_target_sd_1000.png)
+
+Well, it does not affect out chances, but if we miss the target, the chances are that we miss it by much more!
+
+And how do the extremely profitable weekends look like?
+
+![Weekends](https://raw.githubusercontent.com/GedRap/monte_carlo_sales_estimate/master/examples/sales_target_weekend.png)
+
+I added a [jupyter notebook](http://jupyter.org/) (notebook.ipynb) with examples of some visualizations as a starting point.
+
+![Jupyter](https://raw.githubusercontent.com/GedRap/monte_carlo_sales_estimate/master/examples/notebook.png)
 
 ### What's next?
 
