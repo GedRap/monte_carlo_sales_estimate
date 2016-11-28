@@ -44,7 +44,7 @@ Ok, let's take this one into account!
 
 Enough talking, let's dive into the code!
 
-```
+```python
 def simulate_monthly_sales(sales_mean, sales_stddev, starting_date, iterations=2000, weekend_effect=1):
     """
     Return list of simulated daily sales
@@ -98,7 +98,7 @@ the probability is.
 
 We can do this in only two lines of code:
 
-```
+```python
 def target_met_frequency(simulated_daily_sales, target):
     """
     Percentage of simulations where the sales target has been met.
