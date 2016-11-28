@@ -53,11 +53,16 @@ def simulate_monthly_sales(sales_mean, sales_stddev, starting_date, iterations=2
             current_date = current_date.replace(days=1) # advance one day
 
         simulated_sales.append(sales_cumulative)
-        #print sales_cumulative
 
     return simulated_sales
 
 def target_met_frequency(simulated_daily_sales, target):
+    """
+    Percentage of simulations where the sales target has been met.
+    :param simulated_daily_sales: Results of simulations.
+    :param target: The sales target.
+    :return: Percentage (e.g. 0.95).
+    """
     days_when_target_met = [sales[-1] for sales in simulated_daily_sales if sales[-1] >= target]
 
     return float(len(days_when_target_met)) / len(simulated_daily_sales)
